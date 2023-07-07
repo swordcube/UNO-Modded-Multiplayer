@@ -1,0 +1,2 @@
+This is where the card data will go for special cards.
+(1-9 cards will be added through code.)

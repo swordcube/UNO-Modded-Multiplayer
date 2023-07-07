@@ -1,0 +1,2 @@
+This is where the card symbols will go for special cards.
+(1-9 cards will be added through code.)
