@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Symbols.png">
+	<!-- Created with Adobe Animate version 22.0.3.179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="+20000" x="0" y="0" width="61" height="49"/>
+	<SubTexture name="+40000" x="61" y="0" width="64" height="49"/>
+	<SubTexture name="00000" x="125" y="0" width="45" height="49"/>
+	<SubTexture name="10000" x="170" y="0" width="35" height="49"/>
+	<SubTexture name="20000" x="205" y="0" width="42" height="49"/>
+	<SubTexture name="30000" x="0" y="49" width="42" height="49"/>
+	<SubTexture name="40000" x="42" y="49" width="45" height="49"/>
+	<SubTexture name="50000" x="87" y="49" width="42" height="49"/>
+	<SubTexture name="60000" x="129" y="49" width="46" height="59"/>
+	<SubTexture name="70000" x="175" y="49" width="43" height="49"/>
+	<SubTexture name="80000" x="0" y="108" width="44" height="49"/>
+	<SubTexture name="90000" x="44" y="108" width="46" height="59"/>
+	<SubTexture name="block0000" x="90" y="108" width="48" height="48"/>
+	<SubTexture name="colorswap0000" x="138" y="108" width="48" height="49"/>
+	<SubTexture name="reverse0000" x="186" y="108" width="48" height="48"/>
+</TextureAtlas>

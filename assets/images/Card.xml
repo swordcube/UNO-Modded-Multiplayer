@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Card.png">
+	<!-- Created with Adobe Animate version 22.0.3.179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="card0000" x="1" y="1" width="64" height="100"/>
+	<SubTexture name="card_back0000" x="66" y="1" width="64" height="100"/>
+	<SubTexture name="card_over0000" x="131" y="1" width="64" height="100"/>
+</TextureAtlas>
