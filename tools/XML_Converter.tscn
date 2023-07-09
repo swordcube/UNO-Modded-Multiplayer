@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://2t1ig44g85jw" path="res://icon.svg" id="1_8otpr"]
 [ext_resource type="Script" path="res://tools/XML_Converter.gd" id="1_72kxm"]
 [ext_resource type="Script" path="res://tools/Choose_Sprites.gd" id="2_kmxvy"]
-[ext_resource type="Theme" uid="uid://dq6cj3i3aglwf" path="res://new_theme.tres" id="4_cqp41"]
+[ext_resource type="Theme" uid="uid://dq6cj3i3aglwf" path="res://uno_theme.tres" id="4_cqp41"]
 
 [node name="XML Converter" type="Node2D"]
 

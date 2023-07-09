@@ -1,3 +1,151 @@
-[gd_scene format=3 uid="uid://ccxx5jsgqq7pt"]
+[gd_scene load_steps=6 format=3 uid="uid://ccxx5jsgqq7pt"]
+
+[ext_resource type="SpriteFrames" uid="uid://jgi4p2gy5tjo" path="res://assets/images/menus/Main.res" id="1_7wjuh"]
+[ext_resource type="Script" path="res://scenes/MainMenu.gd" id="1_ymlbl"]
+[ext_resource type="Theme" uid="uid://dq6cj3i3aglwf" path="res://uno_theme.tres" id="3_amd08"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_chmv7"]
+size = Vector2(117, 44)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_acmx0"]
+size = Vector2(164, 44)
 
 [node name="MainMenu" type="Node2D"]
+script = ExtResource("1_ymlbl")
+
+[node name="BG" type="AnimatedSprite2D" parent="."]
+position = Vector2(634, 358)
+sprite_frames = ExtResource("1_7wjuh")
+animation = &"BG"
+
+[node name="Logo" type="AnimatedSprite2D" parent="."]
+position = Vector2(304, 175)
+sprite_frames = ExtResource("1_7wjuh")
+animation = &"LOGO"
+
+[node name="Sep" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 358)
+sprite_frames = ExtResource("1_7wjuh")
+animation = &"separate"
+centered = false
+
+[node name="Buttons" type="Node2D" parent="."]
+position = Vector2(960, 290)
+
+[node name="Host" type="AnimatedSprite2D" parent="Buttons"]
+position = Vector2(-38, 0)
+sprite_frames = ExtResource("1_7wjuh")
+animation = &"host"
+
+[node name="Label" type="Label" parent="Buttons/Host"]
+offset_left = 30.0
+offset_top = -15.0
+offset_right = 88.0
+offset_bottom = 22.0
+theme = ExtResource("3_amd08")
+text = "Host"
+
+[node name="Area2D" type="Area2D" parent="Buttons/Host"]
+position = Vector2(33.5, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/Host/Area2D"]
+shape = SubResource("RectangleShape2D_chmv7")
+
+[node name="Join" type="AnimatedSprite2D" parent="Buttons"]
+position = Vector2(-36, 70)
+sprite_frames = ExtResource("1_7wjuh")
+animation = &"join"
+
+[node name="Label" type="Label" parent="Buttons/Join"]
+offset_left = 30.0
+offset_top = -15.0
+offset_right = 88.0
+offset_bottom = 22.0
+theme = ExtResource("3_amd08")
+text = "Join"
+
+[node name="Area2D" type="Area2D" parent="Buttons/Join"]
+position = Vector2(31.5, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/Join/Area2D"]
+shape = SubResource("RectangleShape2D_chmv7")
+
+[node name="Settings" type="AnimatedSprite2D" parent="Buttons"]
+position = Vector2(-65, 140)
+sprite_frames = ExtResource("1_7wjuh")
+animation = &"settings"
+
+[node name="Label" type="Label" parent="Buttons/Settings"]
+offset_left = 30.0
+offset_top = -15.0
+offset_right = 88.0
+offset_bottom = 22.0
+theme = ExtResource("3_amd08")
+text = "Settings
+"
+
+[node name="Area2D" type="Area2D" parent="Buttons/Settings"]
+position = Vector2(56.5, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Buttons/Settings/Area2D"]
+shape = SubResource("RectangleShape2D_acmx0")
+
+[node name="Selected" type="Node2D" parent="."]
+position = Vector2(960, 290)
+
+[node name="Left" type="AnimatedSprite2D" parent="Selected"]
+position = Vector2(-100, 0)
+sprite_frames = ExtResource("1_7wjuh")
+animation = &"select"
+
+[node name="Right" type="AnimatedSprite2D" parent="Selected"]
+position = Vector2(100, 0)
+sprite_frames = ExtResource("1_7wjuh")
+animation = &"select"
+
+[node name="OnlineThingies" type="Node2D" parent="."]
+position = Vector2(392, 480)
+
+[node name="Nickname" type="Label" parent="OnlineThingies"]
+offset_left = -64.0
+offset_top = -47.0
+offset_right = 64.0
+offset_bottom = -13.0
+theme = ExtResource("3_amd08")
+text = "Nickname"
+
+[node name="LineEdit" type="LineEdit" parent="OnlineThingies/Nickname"]
+layout_mode = 0
+offset_left = -70.0
+offset_top = 40.0
+offset_right = 210.0
+offset_bottom = 71.0
+
+[node name="ServerInfo" type="Label" parent="OnlineThingies"]
+offset_left = -68.5
+offset_top = 67.0
+offset_right = 68.5
+offset_bottom = 101.0
+theme = ExtResource("3_amd08")
+text = "Server Info"
+
+[node name="Address" type="LineEdit" parent="OnlineThingies/ServerInfo"]
+layout_mode = 0
+offset_left = -130.0
+offset_top = 40.0
+offset_right = 110.0
+offset_bottom = 73.0
+
+[node name="Port" type="LineEdit" parent="OnlineThingies/ServerInfo"]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 40.0
+offset_right = 240.0
+offset_bottom = 73.0
+
+[connection signal="input_event" from="Buttons/Host/Area2D" to="." method="_area_input" binds= [0]]
+[connection signal="mouse_entered" from="Buttons/Host/Area2D" to="." method="change_selected" binds= [0]]
+[connection signal="input_event" from="Buttons/Join/Area2D" to="." method="_area_input" binds= [1]]
+[connection signal="mouse_entered" from="Buttons/Join/Area2D" to="." method="change_selected" binds= [1]]
+[connection signal="input_event" from="Buttons/Settings/Area2D" to="." method="_area_input" binds= [2]]
+[connection signal="mouse_entered" from="Buttons/Settings/Area2D" to="." method="change_selected" binds= [2]]

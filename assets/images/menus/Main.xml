@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Menu.png">
+	<!-- Created with Adobe Animate version 22.0.3.179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="BG0000" x="1" y="1" width="1280" height="720"/>
+	<SubTexture name="LOGO0000" x="1" y="722" width="512" height="261"/>
+	<SubTexture name="host0000" x="786" y="722" width="44" height="40"/>
+	<SubTexture name="join0000" x="555" y="722" width="40" height="40"/>
+	<SubTexture name="select0000" x="596" y="722" width="4" height="30"/>
+	<SubTexture name="separate0000" x="1" y="984" width="784" height="4"/>
+	<SubTexture name="settings0000" x="514" y="722" width="40" height="44"/>
+</TextureAtlas>

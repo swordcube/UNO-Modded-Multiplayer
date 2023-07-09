@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=5 format=3 uid="uid://xfalyenrr3wg"]
+
+[ext_resource type="Script" path="res://scripts/resources/CardData.gd" id="1_x21aj"]
+[ext_resource type="SpriteFrames" uid="uid://dbav5yvl8if1s" path="res://assets/images/Symbols.res" id="2_qhurj"]
+[ext_resource type="Script" path="res://scripts/resources/CardSymbol.gd" id="3_rh50y"]
+
+[sub_resource type="Resource" id="Resource_2f8sc"]
+script = ExtResource("3_rh50y")
+frames = ExtResource("2_qhurj")
+animation = &"reverse"
+
+[resource]
+script = ExtResource("1_x21aj")
+card_type = "reverse"
+skip_next = 0
+wild_color = false
+symbols = Array[ExtResource("3_rh50y")]([SubResource("Resource_2f8sc")])

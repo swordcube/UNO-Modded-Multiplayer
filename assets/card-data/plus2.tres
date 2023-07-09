@@ -1,7 +1,17 @@
-[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3 uid="uid://bhbx8clgaa4ox"]
+[gd_resource type="Resource" script_class="CardData" load_steps=5 format=3 uid="uid://bhbx8clgaa4ox"]
 
 [ext_resource type="Script" path="res://scripts/resources/CardData.gd" id="1_of5kv"]
+[ext_resource type="SpriteFrames" uid="uid://dbav5yvl8if1s" path="res://assets/images/Symbols.res" id="2_07dyq"]
+[ext_resource type="Script" path="res://scripts/resources/CardSymbol.gd" id="3_r0a4w"]
+
+[sub_resource type="Resource" id="Resource_mcr6o"]
+script = ExtResource("3_r0a4w")
+frames = ExtResource("2_07dyq")
+animation = &"+2"
 
 [resource]
 script = ExtResource("1_of5kv")
+card_type = "plus2"
+skip_next = 1
 wild_color = false
+symbols = Array[ExtResource("3_r0a4w")]([SubResource("Resource_mcr6o")])

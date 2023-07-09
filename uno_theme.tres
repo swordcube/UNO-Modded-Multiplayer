@@ -1,0 +1,18 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://dq6cj3i3aglwf"]
+
+[ext_resource type="FontFile" uid="uid://sn6qtcbf77mw" path="res://assets/fonts/montserrat.ttf" id="1_mb60w"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o1js7"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 1)
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+
+[resource]
+Label/font_sizes/font_size = 24
+Label/fonts/font = ExtResource("1_mb60w")
+LineEdit/colors/font_color = Color(1, 1, 1, 1)
+LineEdit/font_sizes/font_size = 24
+LineEdit/fonts/font = ExtResource("1_mb60w")
+LineEdit/styles/normal = SubResource("StyleBoxFlat_o1js7")

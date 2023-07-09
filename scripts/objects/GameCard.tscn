@@ -1,15 +1,15 @@
 [gd_scene load_steps=3 format=3 uid="uid://dy6v5ljhuo6sk"]
 
-[ext_resource type="SpriteFrames" path="res://assets/images/Card.res" id="1_j4ebg"]
-[ext_resource type="SpriteFrames" path="res://assets/images/Symbols.res" id="2_d2lld"]
+[ext_resource type="SpriteFrames" uid="uid://bldtr14piv2tm" path="res://assets/images/Card.res" id="1_j4ebg"]
+[ext_resource type="SpriteFrames" uid="uid://dbav5yvl8if1s" path="res://assets/images/Symbols.res" id="2_d2lld"]
 
-[node name="Card2D" type="Node2D"]
+[node name="GameCard" type="Node2D"]
 
 [node name="Under" type="AnimatedSprite2D" parent="."]
 sprite_frames = ExtResource("1_j4ebg")
 animation = &"card"
 
-[node name="Over" type="AnimatedSprite2D" parent="."]
+[node name="Overlay" type="AnimatedSprite2D" parent="."]
 sprite_frames = ExtResource("1_j4ebg")
 animation = &"card_over"
 

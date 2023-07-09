@@ -1,7 +1,17 @@
-[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3 uid="uid://dukm4ea1gnlov"]
+[gd_resource type="Resource" script_class="CardData" load_steps=5 format=3 uid="uid://dukm4ea1gnlov"]
 
 [ext_resource type="Script" path="res://scripts/resources/CardData.gd" id="1_o13vk"]
+[ext_resource type="SpriteFrames" uid="uid://dbav5yvl8if1s" path="res://assets/images/Symbols.res" id="2_djlxh"]
+[ext_resource type="Script" path="res://scripts/resources/CardSymbol.gd" id="3_ivves"]
+
+[sub_resource type="Resource" id="Resource_acbdn"]
+script = ExtResource("3_ivves")
+frames = ExtResource("2_djlxh")
+animation = &"block"
 
 [resource]
 script = ExtResource("1_o13vk")
+card_type = "skip"
+skip_next = 2
 wild_color = false
+symbols = Array[ExtResource("3_ivves")]([SubResource("Resource_acbdn")])
